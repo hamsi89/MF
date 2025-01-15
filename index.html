@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Flip.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+ 
+    <title>Document</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+39+Text&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Balthazar&family=Bellefair&family=Girassol&display=swap');
+</style>
+</style>
+
+</style>
+
+</style>
+
+<body>
+    <header class="header">
+        <div class="menu-mobile">
+            <div class="inner-mobile">
+                <ul class="gnb">
+                    <li class="mobile-info">
+                        <div>
+                            <a href="#"><i class='bx bx-log-in'>로그인</i></a>
+                            <a href="#"><i class='bx bx-user-circle'>회원가입</i></a>
+                        </div>
+                        <button class="close-menu"><i class='bx bx-x'></i></button>
+                    </li>
+                    <li>
+                        <p>Guitar</p>
+                        <ul class="sub">
+                            <li class="menu-button">
+                                <p>국가별</p>
+                                <ul class="sub-sub">
+                                    <li><a href="#">국내</a></li>
+                                    <li><a href="#">국외</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-button">
+                                <p>스타일별</p>
+                                <ul class="sub-sub">
+                                    <li><a href="#">스타일1</a></li>
+                                    <li><a href="#">스타일2</a></li>
+                                    <li><a href="#">스타일3</a></li>
+                                    <li><a href="#">스타일4</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-button">
+                                <p>가격별</p>
+                                <ul class="sub-sub">
+                                    <li><a href="#">~10만</a></li>
+                                    <li><a href="#">10~100만</a></li>
+                                    <li><a href="#">100만~</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>BASS</p>
+                        <ul class="sub">
+                            <li>
+                                <p>국가별</p>
+                                <ul class="sub-sub">
+                                    <li><a href="#">국내</a></li>
+                                    <li><a href="#">국외</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <p>스타일별</p>
+                                <ul class="sub-sub">
+                                    <li><a href="#">스타일1</a></li>
+                                    <li><a href="#">스타일2</a></li>
+                                    <li><a href="#">스타일3</a></li>
+                                    <li><a href="#">스타일4</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <p>가격별</p>
+                                <ul class="sub-sub">
+                                    <li><a href="#">~10만</a></li>
+                                    <li><a href="#">10~100만</a></li>
+                                    <li><a href="#">100만~</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>ACOUSITC</p>
+                        <ul class="sub">
+                            <li>
+                                <p>국가별</p>
+                                <ul class="sub-sub">
+                                    <li><a href="#">국내</a></li>
+                                    <li><a href="#">국외</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <p>스타일별</p>
+                                <ul class="sub-sub">
+                                    <li><a href="#">스타일1</a></li>
+                                    <li><a href="#">스타일2</a></li>
+                                    <li><a href="#">스타일3</a></li>
+                                    <li><a href="#">스타일4</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <p>가격별</p>
+                                <ul class="sub-sub">
+                                    <li><a href="#">~10만</a></li>
+                                    <li><a href="#">10~100만</a></li>
+                                    <li><a href="#">100만~</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>RECORDING</p>
+                    </li>
+                    <li>
+                        <p>AMP</p>
+                    </li>
+                    <li>
+                        <p>PEDAL</p>
+                    </li>
+                    <li>
+                        <p>ACC/PARTS</p>
+                    </li>
+                    <li>
+                        <p>SALE/USED</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="inner">
+            <div class="info-pc pc">
+                <ul>
+                    <li><a href="#"><i class='bx bx-log-in'></i>LOG IN</a></li>
+                    <li><a href="#"><i class='bx bx-user-circle'></i>JOIN</a></li>
+                    <li><a href="#"><i class='bx bx-location-plus'></i>FIND A STORE</i></a></li>
+                    <li><a href="#"><i class='bx bx-message-square-dots'></i>HELP</a></li>
+                    <li><a href="#"><i class='bx bx-cart'></i>CART</a></li>
+                </ul>
+            </div>
+            <div class="under">
+                <div class="logo">
+                    <img src="img/mf-logo.png" alt="">
+                </div>
+
+                <div class="pc_nav pc">
+                    <ul class="gnb">
+                        <li>
+                            <a href="#">New Arrival</a>
+                        </li>
+                        <li><a href="#">Guitar</a>
+                            <div class="snb">
+                                <div class="snb-list">
+                                    <p>국가별 브랜드</p>
+                                    <div class="snb-item">
+                                        <a href="#">국내</a>
+                                    </div> <!-- snb item end -->
+                                    <div class="snb-item">
+                                        <a href="#">국외</a>
+                                    </div> <!-- snb item end -->
+
+                                </div><!-- snb list end -->
+                                <div class="snb-list">
+                                    <p>기타 스타일</p>
+                                    <div class="snb-item">
+                                        <a href="#">레스폴</a>
+                                    </div> <!-- snb item end -->
+                                    <div class="snb-item">
+                                        <a href="#">스트라토케스터</a>
+                                    </div> <!-- snb item end -->
+
+                                    <div class="snb-item">
+                                        <a href="#">텔레케스터</a>
+                                    </div> <!-- snb item end -->
+
+                                    <div class="snb-item">
+                                        <a href="#">슈퍼스트랫</a>
+                                    </div> <!-- snb item end -->
+
+                                    <div class="snb-item">
+                                        <a href="#">할로우바디</a>
+                                    </div> <!-- snb item end -->
+
+                                </div><!-- snb list end -->
+
+                                <div class="snb-list">
+                                    <p>가격대 별</p>
+                                    <div class="snb-item">
+                                        <a href="#">SUB</a>
+                                    </div> <!-- snb item end -->
+                                    <div class="snb-item">
+                                        <a href="#">SUB</a>
+                                    </div> <!-- snb item end -->
+
+                                    <div class="snb-item">
+                                        <a href="#">SUB</a>
+                                    </div> <!-- snb item end -->
+
+                                    <div class="snb-item">
+                                        <a href="#">SUB</a>
+                                    </div> <!-- snb item end -->
+
+                                    <div class="snb-item">
+                                        <a href="#">SUB</a>
+                                    </div> <!-- snb item end -->
+
+                                </div><!-- snb list end -->
+                            </div>
+                        </li>
+                        <li><a href="#">Bass</a>
+                            <ul class="snb">
+                            </ul>
+                        </li>
+                        <li><a href="#">Acoustic</a></li>
+                        <li><a href="#">Recording</a></li>
+                        <li><a href="#">Amp</a></li>
+                        <li><a href="#">Pedal</a></li>
+                        <div class="snb">
+                            <div class="snb-list">
+                                <p>국가별 브랜드</p>
+                                <div class="snb-item">
+                                    <a href="#">국내</a>
+                                </div> <!-- snb item end -->
+                                <div class="snb-item">
+                                    <a href="#">국외</a>
+                                </div> <!-- snb item end -->
+
+                            </div><!-- snb list end -->
+                            <div class="snb-list">
+                                <p>기타 스타일</p>
+                                <div class="snb-item">
+                                    <a href="#">레스폴</a>
+                                </div> <!-- snb item end -->
+                                <div class="snb-item">
+                                    <a href="#">스트라토케스터</a>
+                                </div> <!-- snb item end -->
+
+                                <div class="snb-item">
+                                    <a href="#">텔레케스터</a>
+                                </div> <!-- snb item end -->
+
+                                <div class="snb-item">
+                                    <a href="#">슈퍼스트랫</a>
+                                </div> <!-- snb item end -->
+
+                                <div class="snb-item">
+                                    <a href="#">할로우바디</a>
+                                </div> <!-- snb item end -->
+
+                            </div><!-- snb list end -->
+
+                            <div class="snb-list">
+                                <p>가격대 별</p>
+                                <div class="snb-item">
+                                    <a href="#">SUB</a>
+                                </div> <!-- snb item end -->
+                                <div class="snb-item">
+                                    <a href="#">SUB</a>
+                                </div> <!-- snb item end -->
+
+                                <div class="snb-item">
+                                    <a href="#">SUB</a>
+                                </div> <!-- snb item end -->
+
+                                <div class="snb-item">
+                                    <a href="#">SUB</a>
+                                </div> <!-- snb item end -->
+
+                                <div class="snb-item">
+                                    <a href="#">SUB</a>
+                                </div> <!-- snb item end -->
+
+                            </div><!-- snb list end -->
+                        </div>
+                        <li><a href="#">Acc / Parts</a></li>
+                        <li><a href="#">Sale / Used</a></li>
+                    </ul>
+                </div>
+
+                <div class="search-pc pc">
+                    <i class='bx bx-search-alt'></i>
+                </div>
+                <div class="menu-btn mobile">
+                    <ul>
+                        <li><button><i class='bx bx-search-alt'></i></button></li>
+
+                        <li><button><i class='bx bx-cart'></i></button></li>
+                        <li><button class="open-button"><i class='bx bx-menu'></i></button></li>
+                    </ul>
+                </div>
+                </ul><!-- under -->
+            </div><!-- inner -->
+    </header>
+    <section class="main-visual">
+ <!--        <img src="img/mainvisual.png" alt=""> -->
+    </section>
+
+    <section class="sp-item">
+        <div class="inner">
+            <div class="title">
+                <h1>PREMIUM LINE UP</h1>
+                <span>우린 다른 이들이라면 완벽이라고 말 할 수준을 넘어설 것입니다. <br />
+                    기술에는 한계가 없다고 생각하는 전문가들과 손을 뗄 수 없을 정도의 완성품을 보장하는 헌식적인 제작자들과 함께, 우린 타협하지 않을 것입니다.</span>
+            </div>
+            <div class="wrapper">
+                <div class="expander" data-viewbox="view-box-1">
+                    <div id="view-box-1" class="view-box">
+                        <img src="img/pngegg (7).png" alt="">
+                    </div>
+                    <img class="banner" src="img/shop3.png" alt="">
+                  <!--   <a class="banner-link" href="#">View MORE ></a> -->
+                </div>
+
+                <div class="expander" data-viewbox="view-box-2">
+                    <div id="view-box-2" class="view-box">
+                        <img src="img/jtg+logo+White+copy.png" alt="">
+                    </div>
+                    <img class="banner" src="img/shop2.png" alt="">
+             <!--        <a class="banner-link" href="#">View MORE ></a> -->
+                </div>
+
+
+                <div class="expander" data-viewbox="view-box-3">
+                    <div id="view-box-3" class="view-box">
+                        <img src="img/pngegg (9).png" alt="">
+                    </div>
+                    <img class="banner" src="img/shop1_1244_top_219880.jpg.png" alt="">
+          <!--           <a class="banner-link" href="#">View MORE ></a> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="new-item">
+        <div class="inner">
+            <div class="title">
+                <h1>NEW ARRIVAL</h1>
+            </div>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="item">
+                            <a href="#">
+                                <div class="image"><img src="img/new1.png" alt=""></div>
+                                <div class="price-box">
+                                    <p>American Professional II Precision Bass® V</p>
+                                    <div class="price"><span>18,950,000원</span>
+                                        <h2>14,990,000원</h2>
+                                    </div>
+                                </div>
+                            </a>
+                        </div><!-- item -->
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="item">
+                            <a href="#">
+                                <div class="image"><img src="img/new2.png" alt=""></div>
+                                <div class="price-box">
+                                    <p>American Professional II Precision Bass® V</p>
+                                    <div class="price"><span>18,950,000원</span>
+                                        <h2>14,990,000원</h2>
+                                    </div>
+                                </div>
+                            </a>
+                        </div><!-- item -->
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="item">
+                            <a href="#">
+                                <div class="image"><img src="img/new3.png" alt=""></div>
+                                <div class="price-box">
+                                    <p>American Professional II Precision Bass® V</p>
+                                    <div class="price"><span>18,950,000원</span>
+                                        <h2>14,990,000원</h2>
+                                    </div>
+                                </div>
+                            </a>
+                        </div><!-- item -->
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="item">
+                            <a href="#">
+                                <div class="image"><img src="img/new4.png" alt=""></div>
+                                <div class="price-box">
+                                    <p>American Professional II Precision Bass® V</p>
+                                    <div class="price"><span>18,950,000원</span>
+                                        <h2>14,990,000원</h2>
+                                    </div>
+                                </div>
+                            </a>
+                        </div><!-- item -->
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="item">
+                            <a href="#">
+                                <div class="image"><img src="img/new1.png" alt=""></div>
+                                <div class="price-box">
+                                    <p>American Professional II Precision Bass® V</p>
+                                    <div class="price"><span>18,950,000원</span>
+                                        <h2>14,990,000원</h2>
+                                    </div>
+                                </div>
+                            </a>
+                        </div><!-- item -->
+                    </div>
+
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="promotion">
+        <div class="inner">
+            <div class="item-wrap">
+                <div class="text">
+                    <p>1+1 special promotion</p>
+                    <h1>Hughes & Kettner</h1>
+                    <h1>GrandMeister Deluxe 40</h1>
+                </div><!-- text -->
+                <div class="image">
+                    <img src="img/promotion-item.png" alt="">
+                    <div class="one">
+                        <span>10P<br />
+                            ONLY</span>
+                    </div>
+
+                </div><!-- image -->
+
+                <div class="box">
+                    <a href="#">
+                        <p>DETAIL</p>
+                </div><!-- box -->
+            </div><!-- item-wrap -->
+        </div><!-- inner -->
+    </section>
+
+    <section class="topic">
+        <div class="inner">
+            <div class="grid-wrap">
+                <div class="left">
+                    <div class="grid">
+                        <div class="image">
+                            <img src="img/Layer 220.png" alt="">
+                        </div>
+                        <div class="text">
+                            <p>화재의 밴드‘QWER’이 직접 사용하는 악기</p>
+                            <span>‘QWER’이 실제로 사용하는 PRS SE 모델과 <br />
+                                Bacchus의 악기들을 만나보세요</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="image">
+                        <img src="img/item.png" alt="">
+                        <div class="text">
+                            <p>화재의 밴드‘QWER’이 직접 사용하는</p>
+                            <span>‘QWER’이 실제로 사용하는 PRS SE 모델과
+                                Bacchus의 악기들을 만나보세요</span>
+                        </div>
+                    </div>
+                    <div class="image">
+                        <img src="img/item2.png" alt="">
+                        <div class="text">
+                            <p>화재의 밴드‘QWER’이 직접 사용하는</p>
+                            <span>‘QWER’이 실제로 사용하는 PRS SE 모델과
+                                Bacchus의 악기들을 만나보세요</span>
+                        </div>
+                    </div>
+                    <div class="image pc">
+                        <img src="img/item03.png" alt="">
+                        <div class="text">
+                            <p>화재의 밴드‘QWER’이 직접 사용하는</p>
+                            <span>‘QWER’이 실제로 사용하는 PRS SE 모델과
+                                Bacchus의 악기들을 만나보세요</span>
+                        </div>
+                    </div>
+                    <div class="image pc">
+                        <img src="img/item04.png" alt="">
+                        <div class="text">
+                            <p>화재의 밴드‘QWER’이 직접 사용하는 악sgsagsag기</p>
+                            <span>‘QWER’이 실제로 사용하는 PRS SE 모델과
+                                Bacchus의 악기들을 만나보세요</span>
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="demo">
+        <div class="inner">
+            <div class="item-wrap">
+                <div class="left">
+                    <img src="img/yellowpedal.png" alt="">
+                </div><!-- left -->
+                <div class="right">
+                    <img src="img/redpedal.png" alt="">
+                </div><!-- right -->
+            </div><!-- item wrap -->
+            <div class="title">
+                <h1>PRODUCT DEMO</h1>
+                <span>뮤직포스가 제공하는 데모사운드</span>
+            </div><!-- title -->
+            <div class="box">
+                <a href="#">
+                    <p>VIEW MORE</p> <i class='bx bx-chevron-right'></i>
+                </a>
+            </div><!-- box -->
+        </div><!-- inner -->
+
+    </section>
+
+
+    <section class="signature">
+        <div class="item-wrap">
+            <img src="img/sig-left.png" alt="">
+            <img src="img/sig-right.png" alt="">
+        </div>
+        <div class="title">
+            <h1>ARTIST SIGNATURE</h1>
+            <span>아티스트의 시그니처 기타를 만나보세요</span>
+        </div>
+        <div class="box">
+            <a href="#">
+                <p>DETAIL</p> <i class='bx bx-chevron-right'></i>
+            </a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="inner">
+            <div class="item-wrap">
+                <ul class="law">
+                    <li><a href="#">사이트이용약관</a></li>
+                    <li><a href="#">개인정보취급방침</a></li>
+                    <li><a href="#">이메일무단수집거부</a></li>
+                    <li><a href="#">이메일무단수집거부</a></li>
+                </ul>
+                <div class="local">
+                    <div class="image">
+                        <img src="img/logo.png" alt="">
+                    </div>
+                    <p>서울특별시 강남구 역삼동 790-12 써밋빌딩 B1 / 1F / 2F [ 06248 ]</p>
+                </div>
+                <div class="text">
+                    <p>Email : contact@musicforceglobal.com</p>
+                    <p>Tel : 02-3474-5150</p>
+                    <p>Fax : 02-3474-5160</p>
+                    <p>사업자등록번호 : 211-88-43892</p>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="js/script.js"></script>
+
+</body>
+
+
+
+</html>
